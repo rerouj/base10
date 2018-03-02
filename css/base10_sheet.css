@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    margin-top: 200px;
+}
+
+.box{
+    width: 65%;
+    height: 140px;
+    margin: auto;
+}
+
+span#output span{
+    position: inline-block;
+    text-align: center;
+    font-size: 55px;
+    height: 140px;
+    width: 150px;
+    margin-right: 5px;
+    padding-top: 5%;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    display: inline-block;
+    transition: color 0.5s ease;
+}
+
+@keyframes example {
+    from {color: black;}
+    to {color: white;}
+}
+
+span#output span.span_class{
+    color: black;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 1024px){
+
+    span#output span{
+        text-align: center;
+        font-size: 30px;
+        height: 100px;
+        width: 120px;
+        margin-right: 5px;
+        padding-top: 7%;
+        border: solid;
+        border-color: white;
+        border-radius: 5px;
+        border-width: 1px;
+        display: inline-block;
+        transition: color 0.5s ease;
+    }
+
+}
